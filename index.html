@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DH Recons</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><a class="brand" href="#/">DH Recons</a></header>
+  <main id="app"></main>
+  <template id="entry-template">
+    <form class="entry-form">
+      <input name="solver" placeholder="Solver name" required />
+      <input name="time" placeholder="Time" required />
+      <input name="moves" type="number" min="0" placeholder="Move count" required />
+      <input name="method" placeholder="Method" required />
+      <input name="date" type="date" required />
+      <input name="competition" placeholder="Competition" required />
+      <input name="source" type="url" placeholder="alg.cubing.net or alpha.cubing.net link" required />
+      <textarea name="scramble" placeholder="Scramble (if applicable)"></textarea>
+      <textarea name="recon" placeholder="Reconstruction" required></textarea>
+      <div class="form-actions"><button type="submit">Save</button><button type="button" class="cancel">Cancel</button></div>
+    </form>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
+
